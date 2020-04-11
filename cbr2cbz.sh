@@ -18,4 +18,4 @@ zip -r $tempdir/"${filename_without_extension}".zip $tempdir/"${filename_without
 
 cp $tempdir/"${filename_without_extension}".zip "${cbr_file%.*}".cbz
 
-rm -r $tempdir
+rm -rf $tempdir
