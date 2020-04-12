@@ -14,7 +14,7 @@ cp "$cbr_file" $tempdir/"${filename}".rar
 mkdir $tempdir/"${filename_without_extension}"
 unrar x $tempdir/"${filename}".rar $tempdir/"${filename_without_extension}"
 
-zip -r $tempdir/"${filename_without_extension}".zip $tempdir/"${filename_without_extension}"/*
+zip -rj $tempdir/"${filename_without_extension}".zip $tempdir/"${filename_without_extension}"/*
 
 cp $tempdir/"${filename_without_extension}".zip "${cbr_file%.*}".cbz
 
